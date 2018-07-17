@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Survey Form </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Description" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+<style type = "text/css"> 
+    strong  { font-weight: bolder;
+				  color: black }
+		p   { font-family:'Times New Roman', Times, serif;
+				font-size: 12pt;
+				color:black}
+		em   { font-family: arial,helvetica, sans-serif;
+				font-weight: bolder;
+				color: black}
+                hr {
+                    height: 5px;
+                    color: Green;
+                    background-color: Green;
+                    border: none;
+			}
+           .main{
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                 }
+		h1    {
+             	color: blue;
+              }
+             .shadow{
+                    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+              }
+	</style> 
+ </head>
+
+ <body bgcolor="White">
+  
+  <table align="center"  cellpadding="0" cellspacing="0" width="1000">
+<tr> <td>
+	<a href ="http://cs.gmu.edu"> <img  src="http://brand.gmu.edu/wp-content/uploads/assets/primarylogo/Mac/GMU_PLogo_RGB.jpg" alt="MasonLogo" width="200" height="100" / > </a> </td>    
+       <td  align="center"><p style ="font-size: 50px "; "width:500px" ;>George Mason University</p></td>
+</table>
+
+<hr/>
+
+
+<div  align="center">
+<h1 class ="shadow"> Feedback Survey</h1>
+
+<table class="main"  align="center" cellpadding="10" cellspacing="0">
+
+
+	<form  name="surveyform" method="post" autocomplete="on">
+        <tr>
+            <td>
+            	<label>*<strong> User Name : </strong></label>
+                <input id="name" type="text" maxlength="20" name="firstname" placeholder="FirstName LastName" required= "required" autofocus="true" /> 
+            </td>
+        </tr>
+		
+  		<tr>
+            <td>
+            	<label>*<strong> Address :</strong> </label>
+                <input id="Address" type="text" maxlength="60" name="Address"  required= "required"/> 
+            </td>
+        </tr>
+  		<tr>
+            <td>
+            	<label>* <strong>City : </strong></label>
+                <input id="City" type="text" maxlength="20" name="City"  required= "required"/> 
+            </td>
+        </tr>
+  		<tr>
+            <td>
+            	<label>* <strong> State : </strong></label>
+                <input id="State" type="text" maxlength="15" name="State" placeholder="Enter your state" required= "required"/> 
+            </td>
+        </tr>
+  		<tr>
+            <td>
+            	<label>* <strong> Zip : </strong></label>
+                <input id="Zip" type="text" maxlength="5" name="Zip" placeholder="12345" required= "required"/> 
+            </td>
+        </tr>
+		 <tr>
+            <td>
+            	<label>* <strong> Phone : </strong> </label>
+                <input id="Phone" type="tel" maxlength="12" name="Phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="xxx-xxx-xxxx" required= "required"/> 
+            </td>
+        </tr>
+  		<tr>
+            <td>
+            	<label>* <strong> Email : </strong></label>
+                <input id="Mail" type="email" maxlength="40" name="Mail" placeholder="abc@xyz.com" required= "required"/> 
+            </td>
+        </tr>
+  		<tr>
+            <td>
+            	<label>* <strong> URL : </strong></label>
+                <input id="url" type="url" maxlength="40" name="url" placeholder="http://www.abc.com" required= "required"/> 
+            </td>
+        </tr>
+  		<tr>
+            <td>
+            	<label>* <strong> Date of Survey: </strong></label>
+                <input id="Date" type="date" maxlength="10" name="Date" placeholder="MM/DD/YYYY" required= "required"/> 
+            </td>
+        </tr>        
+      
+        <tr>
+            <td>
+            <label>* <strong>What you like the most about the campus? </strong></label>
+			<br> 
+             <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="campus" value="student"  />
+                            <label>Students</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="campus" value="location" />
+                            <label>Location</label>
+                        </td>
+                        <td>
+                        	<input type="checkbox" name="campus" value="campus" />
+                            <label>Campus</label>
+                        </td>
+						<td>
+                            <input type="checkbox" name="campus" value="atmosphere" />
+                            <label>Atmosphere</label>
+                        </td>
+						 <td>
+                            <input type="checkbox" name="campus" value="dorrooms" />
+                            <label>Dorm Rooms</label>
+                        </td>
+						<td>
+                        	<input type="checkbox" name="campus" value="sports" />
+                            <label>Sports</label>
+                        </td>
+                    </tr>
+                     
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            <label>* <strong> What made you know about the university? </strong> </label>
+            <br>
+            <table align="left">
+                    <tr>
+                        <td> 
+                            <input type="radio" name="university" value="friends" checked="checked" />
+                            <label>Friends</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="university" value="television" />
+                            <label>Television</label>
+                        </td>                        
+                      	<td>
+                        	<input type="radio" name="university" value="internet" />
+                            <label>Internet</label>
+                        </td>
+                        <td>
+                        	<input type="radio" name="university" value="other" />
+                            <label>Other</label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+            	<label>* <strong> Graduated on: Month</strong> </label>
+                <input list="datalist" placeholder="Select" required="required" />
+            	<datalist id="datalist">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="July">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December">
+                </datalist>
+                <label>* <strong> Year : </strong> </label>
+                <input type="text" width="4" maxlength="4" placeholder="yyyy" required="required" />
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<label>* <strong> I would like to recommend to others </strong> <i></label>
+                <select>
+                    <option value="VLikely">Very Likely</option>
+                    <option value="Likely">Likely</option>
+                    <option value="ULikely">Unlikely</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+        <td>
+                        <label>* <strong> Raffle </strong> </label>
+                        <br>
+                    	<textarea id="num" required="required"  placeholder="Enter 10 comma separated numbers between 1-100" rows="3" cols ="30" onblur="getData()"></textarea>
+                        </td>
+
+        </tr>
+        <tr>
+            <td  >
+            	<label> <strong> Comments: </strong></label>
+                 <br>
+				 <textarea rows="3" cols="30"></textarea>
+                                <input type="submit" name="Submit" value="Submit" align="middle" id="Submit"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+            	<input type="submit" name="Submit" value="Submit Form" align="middle" id="Submit"/>
+                <input type="reset" name="Reset" value="Reset All" align="middle" id="Reset"/>
+            </td>
+        </tr>
+</form>
+</table>
+<table align="center" width="1000" cellpadding="0" cellspacing="0">
+	<hr>
+	<td  style="font-size:30px" align="center">  <strong> Thrinath Reddy Shaga </strong>  </td>
+        <td  style="font-size:30px" align="center">  <strong> G01034034 </strong>  </td>        
+	<td align="right" ><a href="http://www.gmu.edu/"/> <img src="http://brand.gmu.edu/wp-content/uploads/assets/primarylogo/Mac/GMU_PLogo_RGB.jpg" width="210" height="140" /> </a> </td>	
+</table>
+ </body>
+</html>
